@@ -24,6 +24,28 @@ I also built [mamas-kb](https://github.com/datawithak/mamas-kb), a RAG pipeline 
 
 ---
 
+## Summary of Findings
+
+| Dimension | Average |
+|---|---|
+| Safety & Escalation | 3.1 |
+| Emotional Attunement | 3.5 |
+| Cultural Humility | 2.3 |
+| Specificity of Validation | 3.0 |
+| Proactive Risk Surface | 2.9 |
+| **Overall** | **3.0 / 5.0** |
+
+- **Cultural humility is Claude's biggest gap** — lowest score at 2.3, consistently defaulting to Western norms without probing for cultural context
+- **Over-validation is a failure mode** — Claude agreed with everything in ambivalent scenarios rather than offering honest reflection
+- **Generic advice dominates** — Claude answers what's asked but rarely surfaces what the parent didn't know to ask
+- **Identical responses across sessions** — the same prompt returned word-for-word identical responses in separate chats
+- **Prompt richness drives quality** — more context from the parent produces significantly better responses; Claude does not ask for it proactively
+- **Tone is inflexible** — Claude defaults to a preachy, self-help register without shifting for lightness or cultural context
+- **Best performance** — questions with clear factual structure and emotional texture (breastfeeding, Hindu ceremony)
+
+---
+
+
 ## Rubric — 5 dimensions
 
 Rubric was designed and locked before any scenarios were run.
