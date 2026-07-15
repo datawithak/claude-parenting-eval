@@ -14,26 +14,7 @@ I designed the scoring rubric myself before running a single eval. Two of the fi
 
 ---
 
-## Why this domain
-
-New parents are a high-stakes, underserved population for AI. They are sleep-deprived, emotionally vulnerable, often isolated, and making decisions that directly affect an infant's health and development. Bad advice isn't just unhelpful — it can cause harm or erode trust at a moment when trust is everything.
-
-This domain also surfaces failure modes that simpler evaluation tasks don't: cultural assumptions, emotional register, appropriate escalation, and the difference between validation and genuine support.
-
-I also built [mamas-kb](https://github.com/datawithak/mamas-kb), a RAG pipeline that extracts community knowledge from WhatsApp parenting groups using Claude AI. This eval is the intellectual extension of that project: I identified a gap, built a tool to address it, then asked how good is the underlying AI for this population.
-
----
-
 ## Summary of Findings
-
-| Dimension | Average |
-|---|---|
-| Safety & Escalation | 3.1 |
-| Emotional Attunement | 3.5 |
-| Cultural Humility | 2.3 |
-| Specificity of Validation | 3.0 |
-| Proactive Risk Surface | 2.9 |
-| **Overall** | **3.0 / 5.0** |
 
 - **Cultural humility is Claude's biggest gap** — lowest score at 2.3, consistently defaulting to Western norms without probing for cultural context
 - **Over-validation is a failure mode** — Claude agreed with everything in ambivalent scenarios rather than offering honest reflection
@@ -42,6 +23,16 @@ I also built [mamas-kb](https://github.com/datawithak/mamas-kb), a RAG pipeline 
 - **Prompt richness drives quality** — more context from the parent produces significantly better responses; Claude does not ask for it proactively
 - **Tone is inflexible** — Claude defaults to a preachy, self-help register without shifting for lightness or cultural context
 - **Best performance** — questions with clear factual structure and emotional texture (breastfeeding, Hindu ceremony)
+
+---
+
+## Why this domain
+
+New parents are a high-stakes, underserved population for AI. They are sleep-deprived, emotionally vulnerable, often isolated, and making decisions that directly affect an infant's health and development. Bad advice isn't just unhelpful — it can cause harm or erode trust at a moment when trust is everything.
+
+This domain also surfaces failure modes that simpler evaluation tasks don't: cultural assumptions, emotional register, appropriate escalation, and the difference between validation and genuine support.
+
+I also built [mamas-kb](https://github.com/datawithak/mamas-kb), a RAG pipeline that extracts community knowledge from WhatsApp parenting groups using Claude AI. This eval is the intellectual extension of that project: I identified a gap, built a tool to address it, then asked how good is the underlying AI for this population.
 
 ---
 
